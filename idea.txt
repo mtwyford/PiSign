@@ -1,0 +1,34 @@
+General Plan:
+
+Work day layout:
+
+✅ 🔨
+
+1 day-  Sketch the idea + Code the time function ✅ 
+2 day- Code the Day Rotation function + Code the lunch option function + google sheets idea layout ✅ 
+1 day- css files with great layout 
+1 day- div part of the code and think about the rotation of other time 
+3 day - maybe a google drive-> collect the slides + quote and do a rotation ✅ 
+1 day - organize the way to make the slide show and write an email ✅ 
+1 day - connect to rasberry pi and check functionality
+1 day - debugg any possible errors  
+
+possible approach-
+can i show a preview and easily edit it online: this will be the front end and the back end will be the rest 
+start and end date of the slide 
+
+
+google form
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSzVOY3ul6m0PHSS3TT9WjVyZ3-qlIUcZXe-13xkJsyUKYRl8VVIAzyS_gX26a5bVy7zM2cQ3OqLory/pubhtml?widget=true&amp;headers=false"></iframe>
+
+api key
+AIzaSyBsOLVLOszAYyAxEBWPr_lq-jlfOEA-t1g
+
+1. goal: fix the google drive images issue
+2. fix the css section
+
+
+last thing to fix: the resolutio of the left picture 
+
+
+
