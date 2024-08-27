@@ -1,4 +1,3 @@
-
 function updateTime(){
   const now = new Date();
   const clock = {
@@ -17,8 +16,12 @@ setInterval(updateTime,1000)
 //fetch data from google sheet and match the day together to find the schoolDay and lunch option
 async function fetchCSV() {
     // Replace 'your_published_sheet_url' with the URL of your published sheet in CSV format
-    const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSzVOY3ul6m0PHSS3TT9WjVyZ3-qlIUcZXe-13xkJsyUKYRl8VVIAzyS_gX26a5bVy7zM2cQ3OqLory/pub?gid=0&single=true&output=csv'; 
-    const imageUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSzVOY3ul6m0PHSS3TT9WjVyZ3-qlIUcZXe-13xkJsyUKYRl8VVIAzyS_gX26a5bVy7zM2cQ3OqLory/pub?gid=2119881206&single=true&output=csv';
+      //workbook              //https://docs.google.com/spreadsheets/d/1gPvAvWVj5YYGjr8Anrexaj09sb-HjuFb/pub?gid=1432611856&amp;single=true&output=csv
+
+    // const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSzVOY3ul6m0PHSS3TT9WjVyZ3-qlIUcZXe-13xkJsyUKYRl8VVIAzyS_gX26a5bVy7zM2cQ3OqLory/pub?gid=0&single=true&output=csv';   //zeng
+    const sheetUrl = ' https://docs.google.com/spreadsheets/d/1gPvAvWVj5YYGjr8Anrexaj09sb-HjuFb/pub?gid=1432611856&single=true&output=csv'; //twyford
+    //const imageUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSzVOY3ul6m0PHSS3TT9WjVyZ3-qlIUcZXe-13xkJsyUKYRl8VVIAzyS_gX26a5bVy7zM2cQ3OqLory/pub?gid=2119881206&single=true&output=csv'; //zeng
+    const imageUrl = 'https://docs.google.com/spreadsheets/d/1gPvAvWVj5YYGjr8Anrexaj09sb-HjuFb/pub?gid=1889703556&amp;single=true&output=csv';  //twyford
     try {
         var response = await fetch(sheetUrl);
         var response1 = await fetch(imageUrl);
@@ -51,7 +54,7 @@ function updateLunchOption(csvData) {
             console.log(schooDay, Lunch); 
           //make the text the files i gave
             document.getElementById('schoolDay').textContent = schooDay;
-          document.getElementById('extraBlock').textContent = extraBlock;
+            document.getElementById('extraBlock').textContent = extraBlock;
             document.getElementById('lunchOption').textContent = Lunch;
         }
     }
