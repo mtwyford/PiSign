@@ -1,0 +1,126 @@
+html,body {
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  width:100%;
+  height: 100%;
+  
+}
+
+.leftConstant{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:0px;
+  box-sizing: border-box;
+  background-color: #edeff2;
+}
+
+.rightConstant {
+  width: 30%;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+p{
+  margin:0;
+  font-family: Comic Sans MS;
+}
+
+
+.decorativeLine {
+    display: flex; /* Uses flexbox to layout dots and line */
+    align-items: center; /* Centers the dots and line vertically */
+    justify-content: space-between; /* Ensures the dots and line are spaced out to the container's edges */
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #252E87;
+    border-radius: 50%; /* Makes the dot circular */
+    display: inline-block;
+}
+
+.rule {
+    flex-grow: 1; /* Allows the line to fill the space between the dots */
+    height: 4px; /* Thickness of the line */
+    background-color: #252E87;
+    margin: 0 10px; /* Adds horizontal space between the dots and the line */
+}
+
+#schoolDay{
+  font-size: 170px;
+  font-weight: bold;
+  line-height: 1;
+  
+}
+
+#extraBlock{
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1;
+  
+}
+
+#lunchOption{
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#time{
+  font-size: 45px;
+  letter-spacing: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+#dailyImage {
+  margin: 0;
+  padding: 0;
+  max-width:90%;
+  height: min(auto,90%);
+  object-fit: cover;
+  position: relative;
+}
+
+#caption{
+  text-align: center;
+  font-family: Oxygen;
+  font-size: 37px;
+}
+
+#fixedImage{
+  width: 250px;
+  height: 250px;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centerV
+{
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+/*
+.centerV{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*/
